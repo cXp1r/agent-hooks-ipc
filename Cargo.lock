@@ -3,6 +3,17 @@
 version = 4
 
 [[package]]
+name = "agent-hooks-ipc"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "interprocess",
+ "serde",
+ "serde_json",
+ "tokio",
+]
+
+[[package]]
 name = "anyhow"
 version = "1.0.102"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -61,17 +72,6 @@ dependencies = [
  "tokio",
  "widestring",
  "windows-sys",
-]
-
-[[package]]
-name = "ipc_json"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "interprocess",
- "serde",
- "serde_json",
- "tokio",
 ]
 
 [[package]]
